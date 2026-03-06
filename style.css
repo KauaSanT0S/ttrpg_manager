@@ -2,23 +2,24 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    background-color: rgb(66, 66, 99);
+    background-color: rgb(79, 79, 116);
 }
 
-nav, main, div, aside {
-    border: solid;
-    border-width: 1px;
-    padding: 20px
+main, div, aside {
+    padding: 20px;
+    background-color: rgb(66, 66, 99);
+    border-radius: 10px;
 }
 
 th {
     border: 1px;
     border-style: solid;
     padding: 20px;
+    border-style: none;
 }
 
 th:hover {
-    background-color: rgb(66, 66, 99);
+    background-color: rgb(79, 79, 116);
 }
 
 table {
@@ -28,14 +29,17 @@ table {
 }
 
 h1 {
-    padding-left: 20px;
+    margin-left: 20px;
     margin-bottom: 0px;
+    max-width: min-content;
+    min-width: max-content;
+    padding: 10px;
 }
 
 h2, p {
     padding: 0;
     margin: 0;
-    font-size: larger;
+    font-size: 24px;
 }
 
 #nav {
@@ -46,14 +50,17 @@ h2, p {
 #main {
     display: flex;
     flex-direction: row;
+    background-color: rgba(255, 0, 0, 0);
 }
 
 #aside {
     width: 100%;
+    max-height: min-content;
 }
 
 #info {
     width: 60%;
+    max-height: min-content;
 }
 
 #icon {
@@ -92,7 +99,15 @@ h2, p {
 }
 
 #skillsTable tr th:nth-child(2){
-    width: 10%;
+    width: 60px;
+    max-width: 60px;
+    min-width: 60px;
+}
+
+#skillsTable tr th:nth-child(3){
+    width: 110px;
+    max-width: 110px;
+    min-width: 110px;
 }
 
 #inventoryTable tr th{
